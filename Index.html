@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jaimin Prajapati | Java Developer Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <div class="nav-logo">Jaimin Prajapati</div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <div class="portfolio">
+
+
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Aspiring Java Developer with solid foundations in Core Java, Advanced Java, and Object-Oriented
+                Programming. Experienced in building applications using JDBC, SQL/MySQL, and basic Spring Boot with REST
+                APIs. Skilled in Data Structures, multithreading, exception handling, and version control using Git &
+                GitHub. Passionate about backend engineering, clean coding practices, and developing reliable software
+                solutions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                To secure an entry-level Java Developer position where I can apply my technical skills in Core Java,
+                database management, and backend development, while learning modern frameworks and contributing to the
+                development of efficient, scalable software solutions. I aim to grow into a proficient full-stack
+                backend engineer through continuous learning and practical experience.
+            </p>
+        </section>
+
+        <div class="two-column">
+
+            <!-- PROFILE PHOTO -->
+            <section class="half">
+
+                <div class="photo">
+                    <img src="JAIMIN.jpeg" alt="Profile Photo">
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills" class="half">
+                <h2>Technical Skills</h2>
+
+                <div class="skills">
+                    <div class="skill">Core Java</div>
+                    <div class="skill">Advanced Java</div>
+                    <div class="skill">OOP Concepts</div>
+                    <div class="skill">Collection Framework</div>
+                    <div class="skill">Multithreading</div>
+
+                    <div class="skill">JDBC</div>
+                    <div class="skill">SQL / MySQL</div>
+                    <div class="skill">Spring Boot (Basic)</div>
+
+                    <div class="skill">Java 8 Features</div>
+                    <div class="skill">Data Structures</div>
+                    <div class="skill">HTML / CSS</div>
+                    <div class="skill">Git & GitHub</div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p> <b>M.Sc.IT (Pursuing)–</b>
+                KS School of Business Management, Ahmedabad (2021-2026)</p>
+            <p> <b>Higher Secondary Certificate (H.S.C.)–</b>
+                Sagar Vidhyalaya, Gujarat State Board (2019-2020)</p>
+
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <b>Bank Management System (Java Swing + JDBC)</b>
+                <p>Desktop application supporting login authentication, deposit, withdraw and account operations.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <b>Student Management System (Core Java + SQL)</b>
+                <p>Console-based system to manage student records using JDBC.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <b>Library Management System (Java + JDBC)</b>
+                <p>Application to manage book inventory and issue/return records.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <b>REST API for Task Manager (Spring Boot)</b>
+                <p>Backend REST API supporting CRUD operations using Spring Boot and MySQL.</p>
+                <a href="#">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <b>Personal Portfolio Website</b>
+                <p>Responsive portfolio website built using HTML, CSS and JavaScript.</p>
+                <a href="#">Live Demo</a>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Contact / Hiring Form</h2>
+
+
+            <form action="https://formsubmit.co/jaiminprajapati0909@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="New Hiring Request">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label>Full Name</label>
+                <input type="text" name="full_name" placeholder="Enter your full name" required>
+
+                <label>Company Name</label>
+                <input type="text" name="company_name" placeholder="Enter company name">
+
+                <label>Official Email</label>
+                <input type="email" name="email" placeholder="Enter official email address" required>
+
+                <label>Contact Number</label>
+                <input type="tel" name="phone" placeholder="Enter phone number">
+
+                <label>Opportunity Type</label>
+                <select name="opportunity">
+                    <option disabled selected>Select Opportunity</option>
+                    <option>Java Developer - Full Time</option>
+                    <option>Java Developer Internship</option>
+                    <option>Backend Developer Role</option>
+                    <option>Freelance / Contract</option>
+                </select>
+
+                <label>Experience Level Required</label>
+                <select name="experience">
+                    <option>Fresher</option>
+                    <option>0-1 Year</option>
+                    <option>1-2 Years</option>
+                </select>
+
+                <label>Message / Requirement</label>
+                <textarea name="message" rows="4" placeholder="Write job details or requirements"></textarea>
+
+                <button type="submit">Send Hiring Request</button>
+
+            </form>
+        </section>
+
+    </div>
+
+
+    <div class="footer-bar">
+        © 2026 | Jaimin Prajapati | Java Developer Portfolio
+    </div>
+
+    <!-- js---------------------------------------------------------- -->
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        toggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
