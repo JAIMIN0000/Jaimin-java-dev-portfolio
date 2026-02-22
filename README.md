@@ -72,7 +72,8 @@ Java + OOP
 ## 📫 Connect With Me
 
 📧 Email: jaiminprajapati0909@gmail.com  
-🔗 LinkedIn: https://linkedin.com/in/YOUR_LINK  
+🔗 LinkedIn:www.linkedin.com/in/jaimin-prajapati-java
+
 💻 GitHub: https://github.com/jaimin0000
 
 ---
